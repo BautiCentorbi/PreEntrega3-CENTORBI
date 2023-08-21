@@ -3,8 +3,8 @@
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+    list-style: none !important;
+    text-decoration: none !important;
 }
 @font-face {
     font-family: "Fragment";
@@ -16,12 +16,20 @@
 body {
     color: #ffffff;
 }
-header {
+.header {
     background-color: #212427;
     color: #ffffff;
 }
-.nav-container {
-    align-items: right;
+
+/* NavBar */
+
+#nav-father {
+    background-color: #212427;
+    margin: 0px;
+    padding: 0px;
+}
+#nav-container {
+    background-color: #212427;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
@@ -30,36 +38,39 @@ header {
     display: flex;
     padding: 1rem 3rem; 
 }
-.nav-container a {
+#nav-container a span {
+    display: none;
+}
+#nav-container a {
     text-decoration: none;
 }
-.logo img {
+#logo img {
     width: 48px;
     height: 48px;
 }
 main {
     background-color: #212427;
 }
-.main-nav{
+#main-nav{
     margin: 1rem;
     display: flex;
     font-weight: 400;
     padding: 10px 10px;
 }
-.main-nav li{
-    margin: 1rem;
+#main-nav li{
+    margin: 0 1rem;
     text-decoration: none;
     transition:all 300ms ease;
     border-radius: 16px;
 }
-.main-nav a{
+#main-nav a{
     color: #ffffff;
     text-decoration: none;
     transition:all 300ms ease;
     border-radius: 16px;
 }
 
-.main-nav a:hover {
+#main-nav a:hover {
     transition:all 300ms ease;
     text-decoration: none;
     color: #000000;
@@ -68,14 +79,9 @@ main {
     padding: 5px 15px;
     background-color: #ffffff;
 }
-.main-nav .active {
-    transition:all 300ms ease;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 800;
-    border-radius: 16px;
-    padding: 5px 15px;
-    background-color: #ffffff;
+#drawer-button {
+    color: #fff;
+    background-color: #fff;
 }
 .contact-btn button {
     text-decoration: none;
@@ -100,6 +106,10 @@ main {
     border-color: #ffffff;
     font-weight: 900;
 }
+
+
+/* Inicio */
+
 .brand-name {
     font-size: 2rem;
 }
@@ -739,7 +749,7 @@ main a{
         box-sizing: border-box;
     }
     .intro {
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
         flex-wrap: wrap;
     }
     .img-container {
@@ -756,12 +766,8 @@ main a{
         font-size: 1rem;
     }
     .logos {
-        line-height: 24px;
-        font-size: 24px;
-    }
-    .main-buttons {
-        display: flex;
-        width: max-content;
+        line-height: 36px;
+        font-size: 36px;
     }
     .cv-btn button {
         width: max-content;
@@ -778,4 +784,21 @@ main a{
         align-items: center;
         text-align: center;
     }
-}   
+    .cv-btn button {
+        width: 100%;
+    }
+    .about-btn button {
+        width: 100%;
+    }
+    #main-nav a:hover {
+        transition:all 300ms ease;
+        text-decoration: none;
+        color: #000000;
+        font-weight: 800;
+        border-radius: 16px;
+        padding: auto;
+        background-color: #ffffff;
+    }
+    #nav-container a span {
+        display: n;
+    }
