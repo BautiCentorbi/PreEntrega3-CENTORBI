@@ -44,58 +44,61 @@
         </nav>
     </header>
     <main class="main-about">
-        <section class="container-fluid" id="about">
-            <picture class="img-container">
-                <img  alt="Logo de InfiniteDev" src="../multimedia/img/Logo Negativo.png" width="500" height="auto">
-            </picture>
-            <article class="descripciones-about">
-                <h1>
-                    <span>Bautista Centorbi</span> 
-                </h1>
-                <p>
-                    Hola, soy Bautista Centorbi, diseñador UX/UI jr. Tengo 19 años, me considero un amante de la tecnología y de aprender cosas nuevas. En este momento me encuentro realizando el prototipo o maquetado de mi página web para el curso de Desarrollo Web en Coderhouse. Es justamente para esto que estoy diseñando la web. La utilizaré a modo de portfolio y para aplicar cada una de las características y actividades necesarias.
-                </p>
-                <a href="#educacion-boton" class="education-btn"><button>EDUCACIÓN</button></a>
-                <a href="./contact.html" class="contact-btn"><button>CONTÁCTAME</button></a>
-            </article>
-        </section>
-        <section class="more-info">
-            <div class="info-container">
-                <article class="aptitudes">
+        <div class="container-fluid" id="about">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-0" id="img-container">
+                    <img  alt="Logo de InfiniteDev" src="../multimedia/img/Logo Negativo.png" width="500" height="auto">
+                </div>
+                <div class="col-lg-8 col-md-6 col-sm-12" id="descripciones-about">
+                    <h1>
+                        <span>Bautista Centorbi</span> 
+                    </h1>
+                    <p>
+                        Hola, soy Bautista Centorbi, diseñador UX/UI jr. Tengo 19 años, me considero un amante de la tecnología y de aprender cosas nuevas. En este momento me encuentro realizando el prototipo o maquetado de mi página web para el curso de Desarrollo Web en Coderhouse. Es justamente para esto que estoy diseñando la web. La utilizaré a modo de portfolio y para aplicar cada una de las características y actividades necesarias.
+                    </p>
+                    <a href="#educacion-boton" class="education-btn"><button>EDUCACIÓN</button></a>
+                    <a href="./contact.html" class="contact-btn"><button>CONTÁCTAME</button></a>
+                </div>
+            </div>
+        </div>
+        <section class="container-fluid" id="more-info">
+            <div class="row" id="info-container">
+                <div class="col-lg-6 col-md-6 col-sm-12" id="aptitudes">
                     <h2>
                         Mis 
                         <span>aptitudes</span>
                     </h2>
                     <div class="aptitudes-ul">
-                        <ul class="aptitudes-list">
+                        <ul class="" id="aptitudes-list">
                             <li><i class="fa-solid fa-lightbulb"></i>Curioso</li>
                             <li><i class="fa-solid fa-palette"></i>Creativo</li>
                             <li><i class="fa-solid fa-circle-exclamation"></i>Facilidad para resolver problemáticas</li>
                             <li><i class="fa-solid fa-users"></i>Trabajador en equipo</li>
                         </ul>
                     </div>
-                </article>
-                <article class="habilidades-container">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" id="habilidades-container">
                     <h2>
                         Mis 
                         <span>habilidades</span>
                     </h2>
                     <div class="habilidades-ul">
-                        <ul class="aptitudes-list">
+                        <ul class="" id="aptitudes-list">
                             <li><i class="fa-solid fa-language"></i>Inglés intermedio-alto</li>
                             <li><i class="fa-regular fa-object-ungroup"></i>Diseño Gráfico</li>
                             <li><i class="fa-brands fa-uikit"></i>Diseño UX/UI</li>
                             <li><i class="fa-solid fa-code"></i>Desarrollo Web</li>
                         </ul>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
         <section id="educacion-boton" class="education-section">
-            <div class="education-container">
-                <h2> Educación & Experiencia </h2>
-                <article class="educacion">
-                    <div class="psp-illustrator">
+            <div class="container-fluid">
+                <div id="education-h2" class="row">
+                    <h2> Educación & Experiencia </h2>
+                <article class="row" id="educacion">
+                    <div class="col-12" id="psp-illustrator">
                         <div class="left-education">
                             <h4>
                                 <span>Coderhouse</span><br>
@@ -110,7 +113,7 @@
                             <a target="_blank" href="../multimedia/img/Photoshop Illustrator.png">Ver Certificado</a>
                         </div>
                     </div>
-                    <div class="uxui">
+                    <div class="col-12" id="uxui">
                         <div class="left-education">
                             <h4>
                                 <span>Coderhouse</span><br>
@@ -125,7 +128,7 @@
                             <a target="_blank" href="../multimedia/img/Diseño UXUI Básico.png">Ver Certificado</a>
                         </div>
                     </div>
-                    <div class="uxui-avanzado">
+                    <div class="col-12" id="uxui-avanzado">
                         <div class="left-education">
                             <h4>
                                 <span>Coderhouse</span><br>
@@ -140,7 +143,7 @@
                             <a target="_blank" href="../multimedia/img/Diseño UXUI Avanzado.png">Ver Certificado</a>
                         </div>
                     </div>
-                    <div class="webd">
+                    <div class="col-12" id="webd">
                         <div class="left-education">
                             <h4>
                                 <span>Coderhouse</span><br>
@@ -156,6 +159,7 @@
                         </div>
                     </div>
                 </article>
+                </div>
             </div>
         </section>
     </main>
