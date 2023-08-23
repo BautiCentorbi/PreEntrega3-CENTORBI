@@ -117,7 +117,7 @@ main {
     color: #ffffff;
     display: flex;
     padding: 4rem 12rem;
-    align-items: center !important;
+    align-items: center;
 }
 main a{
     text-decoration: none;
@@ -756,11 +756,83 @@ main a{
 
 /* md-Desktop */
 
+@media (min-width: 1024px) {
 
+/* Home Page */
+
+    #Hero-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #intro {
+        padding: 3rem 2rem;
+    }
+    #img-container img {
+        width: 300px;
+    }
+    #descripciones {
+        padding-left: 13rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: 200;
+    }
+    #descripciones span {
+        color: #06b6d9;
+        font-size: 3rem;
+        font-weight: 1200;
+        font-family: "Fragment";
+    }
+    #descripciones p {
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+    .logos-container {
+        padding: 1rem 0;
+    }
+    .logos-container .logos {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    #projects {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+    }
+    #projects-info-container {
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    #projects-container {
+        margin: auto;
+        padding: 0;
+    }
+    #a-link-projects {
+        margin: auto;
+        padding: 20px;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+    #a-link-projects a img {
+        align-items: center;
+        justify-content: center;
+    }
+    #a-link-projects img {
+        width: 280px;
+    }
+
+/* About Page */
+
+
+
+}
 
 /* Tablet View */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     
     /* Home Page */
 
@@ -890,12 +962,16 @@ main a{
         display: n;
     }
     #projects {
-    max-width: 1500px;
-    margin: none;
-    padding-bottom: 40px;
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        padding-bottom: 40px;
     }
     #projects-info-container {
-    width: 100%;
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
     }
     #projects-info-container h2 {
     font-family: "Fragment";
@@ -911,17 +987,12 @@ main a{
     align-items: center;
     }
     #projects-container {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    padding: 60px;
-    border-radius: 16px;
-    background-color: #333538;
-    transition: all 0.3s ease;
+        margin: auto;
+        padding: 0;
     }
     #projects-container img {
     border-radius: 8px;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
     }
     #projects-container a div {
     display: block;
@@ -935,9 +1006,14 @@ main a{
     transition: all 0.3s ease
     }
     #a-link-projects img {
-        width: 250px;
+        width: 350px;
         align-items: center;
         padding-bottom: 20px;
+        margin: auto;
+        padding: 20px;
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     #a-link-projects :hover{
     filter: brightness(0.7);
