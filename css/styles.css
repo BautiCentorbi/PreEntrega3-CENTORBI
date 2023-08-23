@@ -281,8 +281,8 @@ main a{
     width: 100%;
     background-color: rgb(20, 18, 18);
     font-size: 18px;
-    position: relative;
     bottom: 0%;
+    position: relative;
 }
 #footer a {
     color: #bbbbbb;
@@ -290,20 +290,20 @@ main a{
 }
 #footer a:hover {
     color: #06b6d9;
+    padding-left: 10px;
 }
 #footer #footer-container {
     width: 100%;
-    max-width: 1200px;
     margin: auto;
     display: flex;
     padding: 45px 0;
-}   
-#footer #footer-container #footer-columns  {
-    width: 100%;
+    flex-wrap: wrap;
+}
+#footer #footer-container #footer-columns {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     padding: 10px;
 }
 #footer #footer-container #footer-columns .indice {
@@ -311,7 +311,6 @@ main a{
     padding: 0;
 }
 #footer #footer-container #footer-social  {
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -334,6 +333,7 @@ main a{
 #footer #footer-container #footer-social a:hover {
     color: #ffffff;
     background-color: #00667a;
+    padding-left: 0;
 }
 #footer #footer-bottom {
     background-color: #070707;
@@ -756,7 +756,7 @@ main a{
 
 /* md-Desktop */
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1279px){
 
 /* Home Page */
 
@@ -772,10 +772,11 @@ main a{
         width: 300px;
     }
     #descripciones {
-        padding-left: 13rem;
+        padding-left: 12rem;
         padding-top: 2rem;
         font-size: 2rem;
         font-weight: 200;
+        align-items: center;
     }
     #descripciones span {
         color: #06b6d9;
@@ -826,8 +827,145 @@ main a{
 
 /* About Page */
 
+    #about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    #descripciones-about {
+        padding-left: 12rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        font-weight: 200;
+        align-items: center !important;
+    }
+    #descripciones-about span {
+        color: #06b6d9;
+        font-size: 3rem;
+        font-weight: 1200;
+        font-family: "Fragment";
+    }
+    #descripciones-about p {
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
 
+    /* About-Skills */
 
+    #more-info {
+        margin: 0;
+        padding-bottom: 40px;
+    }
+    #info-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+    }
+    #aptitudes {
+        padding: 20px;
+        width: 450px;
+    }
+    #aptitudes h2 {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+    #aptitudes-ul ul {
+        padding: 0 30px;
+    }
+    #aptitudes-ul ul li {
+        padding: 10px;
+        font-size: 24px;
+    }
+    #aptitudes-ul ul li i {
+        font-size: 24px;
+        line-height: 24px;
+        width: 24px;
+    }
+    #habilidades-container {
+        padding: 30px;
+        width: 450px;
+    }
+    #habilidades-container h2 {
+        font-size: 36px;
+        margin-bottom: 32px;
+    }
+    #habilidades-ul {
+        display: flex;
+        padding: 0 30px;
+    }
+    #habilidades-ul ul li {
+        padding: 10px;
+        font-size: 24px;
+    }
+    #habilidades-ul ul li i {
+        font-size: 24px;
+        line-height: 24px;
+        width: 24px;
+    }
+
+    /* About-Education Section */
+
+    #education-section {
+        padding: 40px 0;
+        margin: auto;
+    }
+    #education-section h2 {
+        font-size: 38px;
+        font-weight: bold;
+        margin: 40px 0;
+    }
+    #educacion {
+        width: 100%;
+    }
+    #psp-illustrator {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px;
+        border-top: 1px solid #535456;
+    }
+    #uxui {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px;
+        border-top: 1px solid #535456;
+    }
+    #uxui-avanzado {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px;
+        border-top: 1px solid #535456;
+    }
+    #webd{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 40px;
+        border-top: 1px solid #535456;
+    }
+    #educacion .left-education h4{
+        font-size: 18px;
+        font-weight: normal;
+    }
+    #educacion .left-education h4 span {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #educacion .right-education {
+        text-align: right;
+    }
+    #educacion .right-education h4 {
+        font-size: 18px;
+    }
+    #educacion .right-education a {
+        color: #fff;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    #educacion .right-education a:hover {
+        color: #06b6d9;
+    }
 }
 
 /* Tablet View */
@@ -989,6 +1127,7 @@ main a{
     #projects-container {
         margin: auto;
         padding: 0;
+        display: flex !important;
     }
     #projects-container img {
     border-radius: 8px;
@@ -1005,15 +1144,14 @@ main a{
     color: #212427;
     transition: all 0.3s ease
     }
-    #a-link-projects img {
-        width: 350px;
-        align-items: center;
-        padding-bottom: 20px;
-        margin: auto;
-        padding: 20px;
-        display: flex !important;
-        flex-wrap: wrap;
+    #a-link-projects {
+        display: flex;
         justify-content: center;
+    }
+    #a-link-projects img {
+        width: 260px;
+        justify-content: center;
+        padding: 20px 0;
     }
     #a-link-projects :hover{
     filter: brightness(0.7);
