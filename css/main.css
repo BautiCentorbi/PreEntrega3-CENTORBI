@@ -12,7 +12,7 @@
   font-family: "Fragment";
   src: url(../fonts/Fragment/PPFragment-SerifRegular.otf);
 }
-/* Contacto.html */
+/* Colors */
 body {
   color: #ffffff;
 }
@@ -22,7 +22,6 @@ body {
   color: #ffffff;
 }
 
-/* NavBar */
 #nav-father {
   background-color: #212427;
   margin: 0px;
@@ -39,13 +38,11 @@ body {
   display: flex;
   padding: 1rem 3rem;
 }
-
-#nav-container a span {
-  display: none;
-}
-
 #nav-container a {
   text-decoration: none;
+}
+#nav-container a span {
+  display: none;
 }
 
 #logo img {
@@ -63,21 +60,12 @@ main {
   font-weight: 400;
   padding: 10px 10px;
 }
-
-#main-nav li {
-  margin: 0 1rem;
-  text-decoration: none;
-  transition: all 300ms ease;
-  border-radius: 16px;
-}
-
 #main-nav a {
   color: #ffffff;
   text-decoration: none;
   transition: all 300ms ease;
   border-radius: 16px;
 }
-
 #main-nav a:hover {
   transition: all 300ms ease;
   text-decoration: none;
@@ -86,6 +74,12 @@ main {
   border-radius: 16px;
   padding: 5px 15px;
   background-color: #ffffff;
+}
+#main-nav li {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: all 300ms ease;
+  border-radius: 16px;
 }
 
 #drawer-button {
@@ -109,7 +103,6 @@ main {
   transition: all 300ms ease;
   cursor: pointer;
 }
-
 .contact-btn button:hover {
   background-color: #212427;
   color: #ffffff;
@@ -139,14 +132,12 @@ main a {
   font-size: 2rem;
   font-weight: 200;
 }
-
 #descripciones span {
-  color: #06b6d9;
+  color: #1cbfdf;
   font-size: 4rem;
   font-weight: 1200;
   font-family: "Fragment";
 }
-
 #descripciones p {
   color: #ffffff;
   font-size: 2rem;
@@ -167,7 +158,7 @@ main a {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  color: #06b6d9;
+  color: #1cbfdf;
 }
 
 .cv-btn button {
@@ -186,7 +177,6 @@ main a {
   transition: all 300ms ease;
   cursor: pointer;
 }
-
 .cv-btn button:hover {
   background-color: #212427;
   color: #fff;
@@ -211,7 +201,6 @@ main a {
   transition: all 300ms ease;
   cursor: pointer;
 }
-
 .about-btn button:hover {
   background-color: #212427;
   color: #fff;
@@ -229,7 +218,6 @@ main a {
 #projects-info-container {
   width: 100%;
 }
-
 #projects-info-container h2 {
   font-family: "Fragment";
   color: #fff;
@@ -237,9 +225,8 @@ main a {
   font-weight: bold;
   margin-bottom: 20px;
 }
-
-#projects-info-container h2 span {
-  color: #06b6d9;
+#projects-info-container span {
+  color: #1cbfdf;
   font-family: "Fragment";
   font-style: italic;
 }
@@ -253,14 +240,11 @@ main a {
   padding: 40px 100px;
   border-radius: 16px;
   background-color: #333538;
-  transition: all 0.3s ease;
 }
-
 #projects-container img {
   border-radius: 8px;
   transition: all 0.3s ease;
 }
-
 #projects-container a div {
   display: block;
   text-align: center;
@@ -273,11 +257,13 @@ main a {
   transition: all 0.3s ease;
 }
 
+#a-link-projects {
+  transition: all 0.3s ease;
+}
 #a-link-projects img {
   width: 328px;
 }
-
-#a-link-projects :hover {
+#a-link-projects:hover {
   filter: brightness(0.7);
 }
 
@@ -290,15 +276,13 @@ main a {
   text-align: center;
   padding: 40px 0;
 }
-
 .last-project-container h2 {
   font-size: 42px;
   font-weight: bold;
   padding: 40px;
 }
-
 .last-project-container h2 span {
-  color: #06b6d9;
+  color: #1cbfdf;
   font-family: "Fragment";
 }
 
@@ -315,17 +299,14 @@ main a {
   bottom: 0%;
   position: relative;
 }
-
 #footer a {
   color: #bbbbbb;
   transition: all 0.3s ease;
 }
-
 #footer a:hover {
-  color: #06b6d9;
+  color: #1cbfdf;
   padding-left: 10px;
 }
-
 #footer #footer-container {
   width: 100%;
   margin: auto;
@@ -333,7 +314,6 @@ main a {
   padding: 45px 0;
   flex-wrap: wrap;
 }
-
 #footer #footer-container #footer-columns {
   height: 100%;
   display: flex;
@@ -341,19 +321,16 @@ main a {
   align-items: center;
   padding: 10px;
 }
-
 #footer #footer-container #footer-columns .indice {
   margin: 0;
   padding: 0;
 }
-
 #footer #footer-container #footer-social {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 32px;
 }
-
 #footer #footer-container #footer-social a {
   text-decoration: none;
   color: #bbbbbb;
@@ -365,20 +342,17 @@ main a {
   border-radius: 100%;
   transition: all 300ms ease;
 }
-
 #footer #footer-container #footer-social a:hover {
   color: #ffffff;
   background-color: #00667a;
   padding-left: 0;
 }
-
 #footer #footer-bottom {
   background-color: #070707;
   padding: 15px 10px;
   text-align: center;
   color: #ffffff;
 }
-
 #footer #footer-bottom small {
   font-size: 15px;
 }
@@ -403,23 +377,19 @@ main a {
   max-width: 1200px;
   margin: 10px auto;
 }
-
 .buttons-container .checkbox {
   width: 100%;
 }
-
 .buttons-container .checkbox ul {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
 }
-
 .buttons-container .checkbox ul li {
   display: inline-block;
   margin: 0 20px;
 }
-
 .buttons-container .checkbox ul li label {
   display: inline-block;
   background-color: #212427;
@@ -431,19 +401,16 @@ main a {
   font-size: 30px;
   font-weight: bold;
 }
-
 .buttons-container .checkbox ul li label:hover {
   font-weight: bold;
   border-color: #0093b1;
 }
-
+.buttons-container .checkbox ul li input[type=checkbox] {
+  opacity: 0;
+}
 .buttons-container .checkbox ul li input[type=checkbox]:checked + label {
   border-color: #ffffff;
   background-color: #00667a;
-}
-
-.buttons-container .checkbox ul li input[type=checkbox] {
-  opacity: 0;
 }
 
 /* Formulario */
@@ -454,7 +421,6 @@ main a {
   border-radius: 16px;
   padding: 40px;
 }
-
 .forms h2 {
   font-size: 32px;
   font-weight: bolder;
@@ -468,7 +434,6 @@ main a {
   align-items: center;
   justify-content: center;
 }
-
 .form-container input {
   width: max-content;
   padding: 20px 40px;
@@ -486,7 +451,6 @@ main a {
   justify-content: end;
   margin: 40px 25px 20px;
 }
-
 .submit-btn button {
   padding: 10px 80px;
   font-size: 20px;
@@ -503,8 +467,7 @@ main a {
   transition: all 300ms ease;
   cursor: pointer;
 }
-
-.submit-btn button:hover {
+.submit-btn button :hover {
   background-color: #00667a;
   color: #fff;
 }
@@ -518,14 +481,12 @@ main a {
   font-size: 2rem;
   font-weight: 200;
 }
-
 .descripciones span {
-  color: #06b6d9;
+  color: #1cbfdf;
   font-size: 4rem;
   font-weight: 1200;
   font-family: "Fragment";
 }
-
 .descripciones p {
   color: #ffffff;
   font-size: 2rem;
@@ -546,7 +507,7 @@ main a {
 }
 
 #descripciones-about span {
-  color: #06b6d9;
+  color: #1cbfdf;
   font-size: 4rem;
   font-weight: 1200;
   font-family: "Fragment";
@@ -640,7 +601,7 @@ main a {
 }
 
 #aptitudes h2 span {
-  color: #06b6d9;
+  color: #1cbfdf;
   font-family: "Fragment";
   font-style: italic;
 }
@@ -681,7 +642,7 @@ main a {
 }
 
 #habilidades-container h2 span {
-  color: #06b6d9;
+  color: #1cbfdf;
   font-family: "Fragment";
   font-style: italic;
 }
@@ -770,7 +731,7 @@ main a {
 }
 
 #educacion .right-education a:hover {
-  color: #06b6d9;
+  color: #1cbfdf;
 }
 
 /* Habilidades Page */
@@ -863,7 +824,7 @@ main a {
     align-items: center;
   }
   #descripciones span {
-    color: #06b6d9;
+    color: #1cbfdf;
     font-size: 3rem;
     font-weight: 1200;
     font-family: "Fragment";
@@ -923,7 +884,7 @@ main a {
     align-items: center !important;
   }
   #descripciones-about span {
-    color: #06b6d9;
+    color: #1cbfdf;
     font-size: 3rem;
     font-weight: 1200;
     font-family: "Fragment";
@@ -1042,7 +1003,7 @@ main a {
     transition: all 0.3s ease;
   }
   #educacion .right-education a:hover {
-    color: #06b6d9;
+    color: #1cbfdf;
   }
 }
 /* Tablet View */
@@ -1189,7 +1150,7 @@ main a {
     margin: none;
   }
   #projects-info-container h2 span {
-    color: #06b6d9;
+    color: #1cbfdf;
     font-family: "Fragment";
     font-style: italic;
     align-items: center;
@@ -1239,7 +1200,7 @@ main a {
     font-weight: 200;
   }
   #descripciones-about span {
-    color: #06b6d9;
+    color: #1cbfdf;
     font-size: 2rem;
     font-weight: 1200;
     font-family: "Fragment";
@@ -1280,7 +1241,7 @@ main a {
     text-align: center;
   }
   #aptitudes h2 span {
-    color: #06b6d9;
+    color: #1cbfdf;
     font-family: "Fragment";
     font-style: italic;
   }
@@ -1314,7 +1275,7 @@ main a {
     text-align: center;
   }
   #habilidades-container h2 span {
-    color: #06b6d9;
+    color: #1cbfdf;
     font-family: "Fragment";
     font-style: italic;
   }
@@ -1392,8 +1353,8 @@ main a {
     transition: all 0.3s ease;
   }
   #educacion .right-education a:hover {
-    color: #06b6d9;
+    color: #1cbfdf;
   }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

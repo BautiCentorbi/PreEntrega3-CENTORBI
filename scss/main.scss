@@ -11,102 +11,118 @@
     src: url(../fonts/Fragment/PPFragment-SerifRegular.otf);
 }
 
-/* Contacto.html */
+// Variables
+
+    /* Colors */
+
+$primary-color: #1cbfdf; 
+$bg-color: #212427;
+$buttons-color: #00667a;
+$buttons-hovered: #0093b1;
+$cards-color: #535456;
+$ligth-grey: #333538;
+$secondary-button-border: #9d9d9d;
+
+
+// SCSS
 
 body {
     color: #ffffff;
 }
 .header {
-    background-color: #212427;
+    background-color: $bg-color;
     color: #ffffff;
 }
 
-/* NavBar */
+// NavBar
 
 #nav-father {
-    background-color: #212427;
+    background-color: $bg-color;
     margin: 0px;
     padding: 0px;
 }
 #nav-container {
-    background-color: #212427;
+    background-color: $bg-color;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     align-items: center;
     justify-content: space-between;
     display: flex;
-    padding: 1rem 3rem; 
+    padding: 1rem 3rem;
+        
+        a {
+            text-decoration: none;
+                span {
+                    display: none;
+                }
+        }
 }
-#nav-container a span {
-    display: none;
-}
-#nav-container a {
-    text-decoration: none;
-}
-#logo img {
-    width: 48px;
-    height: 48px;
+#logo {
+    img {
+        width: 48px;
+        height: 48px;
+    }
 }
 main {
-    background-color: #212427;
+    background-color: $bg-color;
 }
 #main-nav{
     margin: 1rem;
     display: flex;
     font-weight: 400;
     padding: 10px 10px;
-}
-#main-nav li{
-    margin: 0 1rem;
-    text-decoration: none;
-    transition:all 300ms ease;
-    border-radius: 16px;
-}
-#main-nav a{
-    color: #ffffff;
-    text-decoration: none;
-    transition:all 300ms ease;
-    border-radius: 16px;
-}
-
-#main-nav a:hover {
-    transition:all 300ms ease;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 800;
-    border-radius: 16px;
-    padding: 5px 15px;
-    background-color: #ffffff;
+        a{
+            color: #ffffff;
+            text-decoration: none;
+            transition:all 300ms ease;
+            border-radius: 16px;
+                &:hover {
+                    transition:all 300ms ease;
+                    text-decoration: none;
+                    color: #000000;
+                    font-weight: 800;
+                    border-radius: 16px;
+                    padding: 5px 15px;
+                    background-color: #ffffff;
+                }   
+        }
+        li{
+            margin: 0 1rem;
+            text-decoration: none;
+            transition:all 300ms ease;
+            border-radius: 16px;
+        }
 }
 #drawer-button {
     color: #fff;
     background-color: #fff;
 }
-.contact-btn button {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-    background-color: #fff;
-    display: inline;
-    justify-content: right;
-    padding: 10px 24px;
-    border-radius: 16px;
-    font-weight: bold;
-    color: #000000;
-    border-style: solid;
-    border-color:#fff;
-    transition: all 300ms ease;
-    cursor: pointer;
+.contact-btn {
+    button {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+        background-color: #fff;
+        display: inline;
+        justify-content: right;
+        padding: 10px 24px;
+        border-radius: 16px;
+        font-weight: bold;
+        color: #000000;
+        border-style: solid;
+        border-color:#fff;
+        transition: all 300ms ease;
+        cursor: pointer;
+            &:hover {
+                background-color: $bg-color;
+                color: #ffffff;
+                border-style: solid;
+                border-color: #ffffff;
+                font-weight: 900;
+        }   
+    }
 }
-.contact-btn button:hover {
-    background-color: #212427;
-    color: #ffffff;
-    border-style: solid;
-    border-color: #ffffff;
-    font-weight: 900;
-}
-
 
 /* Inicio */
 
@@ -126,16 +142,16 @@ main a{
     padding: 6rem;
     font-size: 2rem;
     font-weight: 200;
-}
-#descripciones span {
-    color: #06b6d9;
-    font-size: 4rem;
-    font-weight: 1200;
-    font-family: "Fragment";
-}
-#descripciones p {
-    color: #ffffff;
-    font-size: 2rem;
+        span {
+            color: $primary-color;
+            font-size: 4rem;
+            font-weight: 1200;
+            font-family: "Fragment";
+        } 
+        p {
+            color: #ffffff;
+            font-size: 2rem;
+        } 
 }
 .logos-container {
     display: flex;
@@ -151,7 +167,7 @@ main a{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    color: #06b6d9;
+    color: $primary-color;
 }
 .cv-btn button {
     margin-top: 10px;
@@ -168,13 +184,13 @@ main a{
     border-color:#fff;
     transition: all 300ms ease;
     cursor: pointer;
-}
-.cv-btn button:hover {
-    background-color: #212427;
-    color: #fff;
-    border-style: solid;
-    border-color: #fff;
-    font-weight: 900;
+        &:hover {
+            background-color: $bg-color;
+            color: #fff;
+            border-style: solid;
+            border-color: #fff;
+            font-weight: 900;
+        }   
 }
 .about-btn button {
     margin-top: 10px;
@@ -183,7 +199,7 @@ main a{
     border-radius: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #212427;
+    background-color: $bg-color;
     display: inline;
     font-weight: bold;
     color: #9d9d9d;
@@ -191,13 +207,13 @@ main a{
     border-color:#9d9d9d;
     transition: all 300ms ease;
     cursor: pointer;
-}
-.about-btn button:hover {
-    background-color: #212427;
-    color: #fff;
-    border-style: solid;
-    border-color: #fff;
-    font-weight: bold;
+        &:hover {
+            background-color: $bg-color;
+            color: #fff;
+            border-style: solid;
+            border-color: #fff;
+            font-weight: bold;
+        }   
 }
 #projects {
     max-width: 1500px;
@@ -206,18 +222,18 @@ main a{
 }
 #projects-info-container {
     width: 100%;
-}
-#projects-info-container h2 {
-    font-family: "Fragment";
-    color: #fff;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-#projects-info-container h2 span {
-    color: #06b6d9;
-    font-family: "Fragment";
-    font-style: italic;
+        h2 {
+            font-family: "Fragment";
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        span {
+            color: $primary-color;
+            font-family: "Fragment";
+            font-style: italic;
+        }
 }
 #projects-container {
     width: 100%;
@@ -227,29 +243,31 @@ main a{
     justify-content: space-between;
     padding: 40px 100px;
     border-radius: 16px;
-    background-color: #333538;
+    background-color: $ligth-grey;
+        img {
+            border-radius: 8px;
+            transition: all 0.3s ease
+        }
+        a div {
+            display: block;
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            color: $bg-color;
+            transition: all 0.3s ease
+        }
+}
+#a-link-projects {
     transition: all 0.3s ease;
-}
-#projects-container img {
-    border-radius: 8px;
-    transition: all 0.3s ease
-}
-#projects-container a div {
-    display: block;
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #212427;
-    transition: all 0.3s ease
-}
-#a-link-projects img {
-    width: 328px;
-}
-#a-link-projects :hover{
-    filter: brightness(0.7);
+        img {
+        width: 328px;
+        }
+        &:hover{
+            filter: brightness(0.7);
+        }
 }
 
 /* Portfolio Page */
@@ -259,16 +277,16 @@ main a{
 }
 .last-project-container {
     text-align: center;
-    padding: 40px 0; 
-}
-.last-project-container h2 {
-    font-size: 42px;
-    font-weight: bold; 
-    padding: 40px;  
-}
-.last-project-container h2 span {
-    color: #06b6d9;
-    font-family: "Fragment";
+    padding: 40px 0;
+        h2 {
+            font-size: 42px;
+            font-weight: bold; 
+            padding: 40px;
+                span {
+                    color: $primary-color;
+                    font-family: "Fragment";
+                }  
+        }
 }
 .project-iframe {
     display: flex;
@@ -283,63 +301,63 @@ main a{
     font-size: 18px;
     bottom: 0%;
     position: relative;
-}
-#footer a {
-    color: #bbbbbb;
-    transition: all 0.3s ease;
-}
-#footer a:hover {
-    color: #06b6d9;
-    padding-left: 10px;
-}
-#footer #footer-container {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    padding: 45px 0;
-    flex-wrap: wrap;
-}
-#footer #footer-container #footer-columns {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-#footer #footer-container #footer-columns .indice {
-    margin: 0;
-    padding: 0;
-}
-#footer #footer-container #footer-social  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-}
-#footer #footer-container #footer-social a {    
-    text-decoration: none;
-    color: #bbbbbb;
-    width: 70px !important;
-    line-height: 70px !important;
-    margin-right: 10px;
-    background-color: #212427;
-    text-align: center;
-    border-radius: 100%;
-    transition: all 300ms ease;
-}
-#footer #footer-container #footer-social a:hover {
-    color: #ffffff;
-    background-color: #00667a;
-    padding-left: 0;
-}
-#footer #footer-bottom {
-    background-color: #070707;
-    padding: 15px 10px;
-    text-align: center;
-    color: #ffffff;
-}
-#footer #footer-bottom small {
-    font-size: 15px;    
+        a {
+            color: #bbbbbb;
+            transition: all 0.3s ease;
+                &:hover {
+                    color: $primary-color;
+                    padding-left: 10px;
+                }
+        }
+        #footer-container {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            padding: 45px 0;
+            flex-wrap: wrap;
+                #footer-columns {
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                        .indice {
+                            margin: 0;
+                            padding: 0;
+                        }
+                }
+                #footer-social  {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 32px;   
+                        a {    
+                            text-decoration: none;
+                            color: #bbbbbb;
+                            width: 70px !important;
+                            line-height: 70px !important;
+                            margin-right: 10px;
+                            background-color: $bg-color;
+                            text-align: center;
+                            border-radius: 100%;
+                            transition: all 300ms ease;
+                                &:hover {
+                                    color: #ffffff;
+                                    background-color: $buttons-color;
+                                    padding-left: 0;
+                                }
+                        }
+                }
+        }
+        #footer-bottom {
+            background-color: #070707;
+            padding: 15px 10px;
+            text-align: center;
+            color: #ffffff;
+                small {
+                    font-size: 15px;    
+                }
+        }
 }
 
 /* Contacto.html */
@@ -347,14 +365,16 @@ main a{
 .main-contact {
     padding: 25px;
 }
-.contacto-container h2 {
-    font-family: Fragment;
-    font-size: 48px;
-    font-weight: bold;
-    color: #1cbfdf;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contacto-container {
+    h2 {
+        font-family: Fragment;
+        font-size: 48px;
+        font-weight: bold;
+        color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Botones */
@@ -362,98 +382,98 @@ main a{
 .buttons-container   {
     max-width: 1200px;
     margin: 10px auto;
-}
-.buttons-container .checkbox {
-    width: 100%;
-}
-.buttons-container .checkbox ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-}
-.buttons-container .checkbox ul li {
-    display: inline-block;
-    margin: 0 20px;
-}
-.buttons-container .checkbox ul li label {
-    display: inline-block;
-    background-color: #212427;  
-    border: 1px solid #bbbbbb;
-    color: #bbbbbb;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-    padding:  20px 40px;
-    font-size: 30px;
-    font-weight: bold;
-}
-.buttons-container .checkbox ul li label:hover {
-    font-weight: bold;
-    border-color: #0093b1;
-}
-.buttons-container .checkbox ul li input[type="checkbox"]:checked + label {
-    border-color: #ffffff;
-    background-color: #00667a;
-}
-.buttons-container .checkbox ul li input[type="checkbox"] {
-    opacity: 0;
+        .checkbox {
+            width: 100%;
+            ul  {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                    li {
+                        display: inline-block;
+                        margin: 0 20px;
+                            label {
+                                display: inline-block;
+                                background-color: $bg-color;  
+                                border: 1px solid #bbbbbb;
+                                color: #bbbbbb;
+                                border-radius: 16px;
+                                transition: all 0.3s ease;
+                                padding:  20px 40px;
+                                font-size: 30px;
+                                font-weight: bold;
+                                    &:hover {
+                                        font-weight: bold;
+                                        border-color: $buttons-hovered;
+                                    }
+                            }
+                            input[type="checkbox"] {
+                                opacity: 0;
+                                    &:checked + label {
+                                        border-color: #ffffff;
+                                        background-color: $buttons-color;
+                                    }
+                            }
+                    }
+            }
+        }
 }
 
 /* Formulario */
 .forms {
     max-width: 1200px;
     margin: 10px auto;
-    background-color: #333538;
+    background-color: $ligth-grey;
     border-radius: 16px;
     padding: 40px;
-}
-.forms h2 {
-    font-size: 32px;
-    font-weight:bolder;
-    text-align: center;
-    margin-bottom: 40px;
+        h2 {
+            font-size: 32px;
+            font-weight:bolder;
+            text-align: center;
+            margin-bottom: 40px;
+        }
 }
 .form-container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.form-container input {
-    width: max-content;
-    padding: 20px 40px;
-    margin: 0 auto;
-    background-color: #535456;
-    border: none;
-    color: #fff;
-    font-weight: 800;
-    border-radius: 16px;
-    font-size: 20px;
+        input {
+            width: max-content;
+            padding: 20px 40px;
+            margin: 0 auto;
+            background-color: $cards-color;
+            border: none;
+            color: #fff;
+            font-weight: 800;
+            border-radius: 16px;
+            font-size: 20px;
+        }
 }
 .submit-btn {
     display: flex;
     justify-content: end;
     margin: 40px 25px 20px;
-}
-.submit-btn button {
-    padding: 10px 80px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #212427;
-    display: inline;
-    font-weight: bold;
-    color: #bbb;
-    border-style: solid;
-    border-color:#bbb;
-    transition: all 300ms ease;
-    cursor: pointer;
-}
-.submit-btn button:hover {
-    background-color: #00667a;
-    color: #fff;
+        button {
+            padding: 10px 80px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: $bg-color;
+            display: inline;
+            font-weight: bold;
+            color: #bbb;
+            border-style: solid;
+            border-color:#bbb;
+            transition: all 300ms ease;
+            cursor: pointer;
+                :hover {
+                    background-color: $buttons-color;
+                    color: #fff;
+                }
+        }
 }
 main a{
     text-decoration: none;
@@ -462,16 +482,16 @@ main a{
     padding: 6rem;
     font-size: 2rem;
     font-weight: 200;
-}
-.descripciones span {
-    color: #06b6d9;
-    font-size: 4rem;
-    font-weight: 1200;
-    font-family: "Fragment";
-}
-.descripciones p {
-    color: #ffffff;
-    font-size: 2rem;
+        span {
+            color: $primary-color;
+            font-size: 4rem;
+            font-weight: 1200;
+            font-family: "Fragment";
+        }
+        p {
+            color: #ffffff;
+            font-size: 2rem;
+        }
 }
 
 /* About Page */
@@ -488,7 +508,7 @@ main a{
     font-weight: 200;
 }
 #descripciones-about span {
-    color: #06b6d9;
+    color: $primary-color;
     font-size: 4rem;
     font-weight: 1200;
     font-family: "Fragment";
@@ -500,7 +520,7 @@ main a{
     border-radius: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #212427;
+    background-color: $bg-color;
     display: inline;
     font-weight: bold;
     color: #9d9d9d;
@@ -511,7 +531,7 @@ main a{
     transition: all 0.3s ease;
 }
 .education-btn button:hover {
-    background-color: #212427;
+    background-color: $bg-color;
     color: #fff;
     border-style: solid;
     border-color: #fff;
@@ -534,7 +554,7 @@ main a{
     cursor: pointer;
 }
 .contact-btn button:hover {
-    background-color: #212427;
+    background-color: $bg-color;
     color: #fff;
     border-style: solid;
     border-color: #fff;
@@ -561,7 +581,7 @@ main a{
 #aptitudes  {
     display: inline-block;
     padding: 50px;
-    background-color: #333538;
+    background-color: $ligth-grey;
     border-radius: 16px;
     box-shadow: 0 0 20px rgb(22, 25, 27);
     width: 720px;
@@ -574,7 +594,7 @@ main a{
     text-align: center;
 }
 #aptitudes h2 span {
-    color: #06b6d9;
+    color: $primary-color;
     font-family: "Fragment";
     font-style: italic;
 }
@@ -598,7 +618,7 @@ main a{
 #habilidades-container {
     display: inline-block;
     padding: 50px;
-    background-color: #333538;
+    background-color: $ligth-grey;
     border-radius: 16px;
     box-shadow: 0 0 20px rgb(22, 25, 27);
     width: 720px;
@@ -611,7 +631,7 @@ main a{
     text-align: center;
 }
 #habilidades-container h2 span {
-    color: #06b6d9;
+    color: $primary-color;
     font-family: "Fragment";
     font-style: italic;
 }
@@ -649,25 +669,25 @@ main a{
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
-    border-top: 1px solid #535456;
+    border-top: 1px solid $cards-color;
 }
 #uxui {
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
-    border-top: 1px solid #535456;
+    border-top: 1px solid $cards-color;
 }
 #uxui-avanzado {
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
-    border-top: 1px solid #535456;
+    border-top: 1px solid $cards-color;
 }
 #webd{
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
-    border-top: 1px solid #535456;
+    border-top: 1px solid $cards-color;
 }
 #educacion .left-education h4{
     font-weight: normal;
@@ -687,7 +707,7 @@ main a{
     transition: all 0.3s ease;
 }
 #educacion .right-education a:hover {
-    color: #06b6d9;
+    color: $primary-color;
 }
 
 /* Habilidades Page */
@@ -698,7 +718,7 @@ main a{
     padding: 100px;
 }
 .skill-container {
-    background-color: #333538;
+    background-color: $ligth-grey;
     display: flex;
     border-radius: 16px;
     justify-content: center;
@@ -719,7 +739,7 @@ main a{
     text-align: center;
     padding-bottom: 20px;
     font-size: 48px;
-    color: #1cbfdf;
+    color: $primary-color;
 }
 .habilidades h4 {
     margin-bottom: 25px;
@@ -738,12 +758,12 @@ main a{
     padding: 25px;
     font-size: 26px;
     border-radius: 16px;
-    background-color: #212427;
+    background-color: $bg-color;
     transition: all 0.3s ease;
-    box-shadow: 0px 0px 20px #212427;
+    box-shadow: 0px 0px 20px $bg-color;
 }
 .habilidades ul li:hover {
-    background-color: #535456;
+    background-color: $cards-color;
 }
 .habilidades ul li i{
     font-size: 46px;
@@ -776,7 +796,7 @@ main a{
         align-items: center;
     }
     #descripciones span {
-        color: #06b6d9;
+        color: $primary-color;
         font-size: 3rem;
         font-weight: 1200;
         font-family: "Fragment";
@@ -838,7 +858,7 @@ main a{
         align-items: center !important;
     }
     #descripciones-about span {
-        color: #06b6d9;
+        color: $primary-color;
         font-size: 3rem;
         font-weight: 1200;
         font-family: "Fragment";
@@ -919,25 +939,25 @@ main a{
         display: flex;
         justify-content: space-between;
         padding: 30px 40px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #uxui {
         display: flex;
         justify-content: space-between;
         padding: 30px 40px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #uxui-avanzado {
         display: flex;
         justify-content: space-between;
         padding: 30px 40px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #webd{
         display: flex;
         justify-content: space-between;
         padding: 30px 40px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #educacion .left-education h4{
         font-size: 18px;
@@ -961,7 +981,7 @@ main a{
         transition: all 0.3s ease;
     }
     #educacion .right-education a:hover {
-        color: #06b6d9;
+        color: $primary-color;
     }
 }
 
@@ -1116,7 +1136,7 @@ main a{
     margin: none;
     }
     #projects-info-container h2 span {
-    color: #06b6d9;
+    color: $primary-color;
     font-family: "Fragment";
     font-style: italic;
     align-items: center;
@@ -1138,7 +1158,7 @@ main a{
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
-    color: #212427;
+    color: $bg-color;
     transition: all 0.3s ease
     }
     #a-link-projects {
@@ -1168,7 +1188,7 @@ main a{
         font-weight: 200;
     }
     #descripciones-about span {
-        color: #06b6d9;
+        color: $primary-color;
         font-size: 2rem;
         font-weight: 1200;
         font-family: "Fragment"; 
@@ -1198,7 +1218,7 @@ main a{
     #aptitudes  {
         margin: 40px 20px;
         padding: 20px;
-        background-color: #333538;
+        background-color: $ligth-grey;
         border-radius: 16px;
         box-shadow: 0 0 20px rgb(22, 25, 27);
         width: fit-content;
@@ -1211,7 +1231,7 @@ main a{
     text-align: center;
     }
     #aptitudes h2 span {
-        color: #06b6d9;
+        color: $primary-color;
         font-family: "Fragment";
         font-style: italic;
         }
@@ -1234,7 +1254,7 @@ main a{
     #habilidades-container {
         margin: 40px 20px;
         padding: 20px;
-        background-color: #333538;
+        background-color: $ligth-grey;
         border-radius: 16px;
         box-shadow: 0 0 20px rgb(22, 25, 27);
         width: fit-content;
@@ -1247,7 +1267,7 @@ main a{
         text-align: center;
     }
     #habilidades-container h2 span {
-        color: #06b6d9;
+        color: $primary-color;
         font-family: "Fragment";
         font-style: italic;
     }
@@ -1283,25 +1303,25 @@ main a{
         display: flex;
         justify-content: space-between;
         padding: 30px 20px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #uxui {
         display: flex;
         justify-content: space-between;
         padding: 30px 20px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #uxui-avanzado {
         display: flex;
         justify-content: space-between;
         padding: 30px 20px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #webd{
         display: flex;
         justify-content: space-between;
         padding: 30px 20px;
-        border-top: 1px solid #535456;
+        border-top: 1px solid $cards-color;
     }
     #educacion .left-education h4{
         font-weight: normal;
@@ -1327,6 +1347,6 @@ main a{
         transition: all 0.3s ease;
     }
     #educacion .right-education a:hover {
-        color: #06b6d9;
+        color: $primary-color;
     }
 }
