@@ -654,12 +654,12 @@ main a {
 }
 
 /* About-Educación */
-#education-section {
+.education-section {
   max-width: 1500px;
   padding: 40px 0;
   margin: auto;
 }
-#education-section h2 {
+.education-section h2 {
   font-size: 38px;
   font-weight: bold;
   margin: 40px 0;
@@ -780,7 +780,7 @@ main a {
 }
 
 /* md-Desktop */
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   /* Home Page */
   #Hero-container {
     display: flex;
