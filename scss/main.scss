@@ -469,7 +469,7 @@ main a{
             border-color:#bbb;
             transition: all 300ms ease;
             cursor: pointer;
-                :hover {
+                &:hover {
                     background-color: $buttons-color;
                     color: #fff;
                 }
@@ -506,12 +506,12 @@ main a{
     padding: 6rem;
     font-size: 2rem;
     font-weight: 200;
-}
-#descripciones-about span {
-    color: $primary-color;
-    font-size: 4rem;
-    font-weight: 1200;
-    font-family: "Fragment";
+        span {
+            color: $primary-color;
+            font-size: 4rem;
+            font-weight: 1200;
+            font-family: "Fragment";
+        }
 }
 .education-btn button {
     margin-top: 50px;
@@ -529,13 +529,13 @@ main a{
     transition: all 300ms ease;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-.education-btn button:hover {
-    background-color: $bg-color;
-    color: #fff;
-    border-style: solid;
-    border-color: #fff;
-    font-weight: bold;
+        &:hover {
+            background-color: $bg-color;
+            color: #fff;
+            border-style: solid;
+            border-color: #fff;
+            font-weight: bold;
+        }
 }
 .contact-btn button {
     margin-top: 10px;
@@ -552,13 +552,13 @@ main a{
     border-color:#fff;
     transition: all 300ms ease;
     cursor: pointer;
-}
-.contact-btn button:hover {
-    background-color: $bg-color;
-    color: #fff;
-    border-style: solid;
-    border-color: #fff;
-    font-weight: 900;
+        :hover {
+            background-color: $bg-color;
+            color: #fff;
+            border-style: solid;
+            border-color: #fff;
+            font-weight: 900;
+        }
 }
 #aboutme-container {
     display: flex;
@@ -585,32 +585,32 @@ main a{
     border-radius: 16px;
     box-shadow: 0 0 20px rgb(22, 25, 27);
     width: 720px;
-}
-#aptitudes h2 {
-    font-size: 46px;
-    font-family: "Fragment";
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-}
-#aptitudes h2 span {
-    color: $primary-color;
-    font-family: "Fragment";
-    font-style: italic;
+        h2 {
+            font-size: 46px;
+            font-family: "Fragment";
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+                span {
+                    color: $primary-color;
+                    font-family: "Fragment";
+                    font-style: italic;
+                }
+        }
 }
 .aptitudes-ul {
     display: flex;
     padding: 0 30px;
-}
-.aptitudes-ul ul li {
-    padding: 10px;
-    font-size: 28px;
-}
-.aptitudes-ul ul li i {
-    margin-right: 40px;
-    font-size: 28px;
-    width: 29px;
-    text-align: center;
+        ul li {
+            padding: 10px;
+            font-size: 28px;
+                i {
+                    margin-right: 40px;
+                    font-size: 28px;
+                    width: 29px;
+                    text-align: center;
+                }
+        }
 }
 
 /* Sección Derecha */
@@ -622,32 +622,32 @@ main a{
     border-radius: 16px;
     box-shadow: 0 0 20px rgb(22, 25, 27);
     width: 720px;
-}
-#habilidades-container h2{
-    font-size: 46px;
-    font-family: "Fragment";
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-}
-#habilidades-container h2 span {
-    color: $primary-color;
-    font-family: "Fragment";
-    font-style: italic;
+        h2{
+            font-size: 46px;
+            font-family: "Fragment";
+            font-weight: bold;
+            margin-bottom: 40px;
+            text-align: center;
+                span {
+                    color: $primary-color;
+                    font-family: "Fragment";
+                    font-style: italic;
+                }
+        }
 }
 .habilidades-ul {
     display: flex;
     padding: 0 30px;
-}
-.habilidades-ul ul li {
-    padding: 10px;
-    font-size: 28px;
-}
-.habilidades-ul ul li i {
-    margin-right: 40px;
-    font-size: 28px;
-    width: 29px;
-    text-align: center;
+        ul li {
+            padding: 10px;
+            font-size: 28px;
+                i {
+                    margin-right: 40px;
+                    font-size: 28px;
+                    width: 29px;
+                    text-align: center;
+                }
+        }
 }
 
 /* About-Educación */
@@ -656,14 +656,34 @@ main a{
     max-width: 1500px;
     padding: 40px 0;
     margin: auto;
-}
-#education-section h2 {
-    font-size: 38px;
-    font-weight: bold;
-    margin: 40px 0;
+        h2 {
+            font-size: 38px;
+            font-weight: bold;
+            margin: 40px 0;
+        }
 }
 #educacion {
     width: 100%;
+        .left-education h4{
+            font-weight: normal;
+                span {
+                    font-weight: bold;
+                    font-size: 20px;
+                }
+        }
+        .right-education {
+            text-align: right;
+                a {
+                    color: #fff;
+                    font-weight: bold;
+                    font-style: italic;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                }
+        }
 }
 #psp-illustrator {
     display: flex;
@@ -688,26 +708,6 @@ main a{
     justify-content: space-between;
     padding: 30px 20px;
     border-top: 1px solid $cards-color;
-}
-#educacion .left-education h4{
-    font-weight: normal;
-}
-#educacion .left-education h4 span {
-    font-weight: bold;
-    font-size: 20px;
-}
-#educacion .right-education {
-    text-align: right;
-}
-#educacion .right-education a {
-    color: #fff;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-#educacion .right-education a:hover {
-    color: $primary-color;
 }
 
 /* Habilidades Page */
@@ -734,41 +734,41 @@ main a{
     display: inline-block;
     border-radius: 16px;
     margin: 50px;
-}
-.habilidades h2{
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 48px;
-    color: $primary-color;
-}
-.habilidades h4 {
-    margin-bottom: 25px;
-    color: #bbb;
-    text-align: center;
-}
-.habilidades ul {
-    padding: 25px 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    text-align: center;
-}
-.habilidades ul li {
-    display: inline;
-    padding: 25px;
-    font-size: 26px;
-    border-radius: 16px;
-    background-color: $bg-color;
-    transition: all 0.3s ease;
-    box-shadow: 0px 0px 20px $bg-color;
-}
-.habilidades ul li:hover {
-    background-color: $cards-color;
-}
-.habilidades ul li i{
-    font-size: 46px;
-    display: block;
-    padding: 20px 25px;
+        h2{
+            text-align: center;
+            padding-bottom: 20px;
+            font-size: 48px;
+            color: $primary-color;
+        }
+        h4 {
+            margin-bottom: 25px;
+            color: #bbb;
+            text-align: center;
+        }
+        ul {
+            padding: 25px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            text-align: center;
+                li {
+                    display: inline;
+                    padding: 25px;
+                    font-size: 26px;
+                    border-radius: 16px;
+                    background-color: $bg-color;
+                    transition: all 0.3s ease;
+                    box-shadow: 0px 0px 20px $bg-color;
+                        i{
+                            font-size: 46px;
+                            display: block;
+                            padding: 20px 25px;
+                        }
+                        :hover {
+                            background-color: $cards-color;
+                        }
+                }
+        }
 }
 
 /* md-Desktop */
@@ -794,23 +794,23 @@ main a{
         font-size: 2rem;
         font-weight: 200;
         align-items: center;
-    }
-    #descripciones span {
-        color: $primary-color;
-        font-size: 3rem;
-        font-weight: 1200;
-        font-family: "Fragment";
-    }
-    #descripciones p {
-        color: #ffffff;
-        font-size: 1.5rem;
+            span {
+                color: $primary-color;
+                font-size: 3rem;
+                font-weight: 1200;
+                font-family: "Fragment";
+            }
+            p {
+                color: #ffffff;
+                font-size: 1.5rem;
+            }
     }
     .logos-container {
         padding: 1rem 0;
-    }
-    .logos-container .logos {
-        font-size: 36px;
-        line-height: 36px;
+            .logos {
+                font-size: 36px;
+                line-height: 36px;
+            }
     }
     #projects {
         margin: 0px;
@@ -833,14 +833,12 @@ main a{
         display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
+            a img {
+                align-items: center;
+                justify-content: center;
+                width: 280px;
+            }
     } 
-    #a-link-projects a img {
-        align-items: center;
-        justify-content: center;
-    }
-    #a-link-projects img {
-        width: 280px;
-    }
 
 /* About Page */
 
@@ -856,17 +854,16 @@ main a{
         font-size: 2rem;
         font-weight: 200;
         align-items: center !important;
-    }
-    #descripciones-about span {
-        color: $primary-color;
-        font-size: 3rem;
-        font-weight: 1200;
-        font-family: "Fragment";
-    }
-    #descripciones-about p {
-        color: #ffffff;
-        font-size: 1.5rem;
-    }
+            span {
+                color: $primary-color;
+                font-size: 3rem;
+                font-weight: 1200;
+                font-family: "Fragment";
+            }
+            p {
+                color: #ffffff;
+                font-size: 1.5rem; 
+            }
 
     /* About-Skills */
 
@@ -882,43 +879,43 @@ main a{
     #aptitudes {
         padding: 20px;
         width: 450px;
-    }
-    #aptitudes h2 {
-        font-size: 36px;
-        margin-bottom: 32px;
-    }
-    #aptitudes-ul ul {
-        padding: 0 30px;
-    }
-    #aptitudes-ul ul li {
-        padding: 10px;
-        font-size: 24px;
-    }
-    #aptitudes-ul ul li i {
-        font-size: 24px;
-        line-height: 24px;
-        width: 24px;
+            h2 {
+                font-size: 36px;
+                margin-bottom: 32px;
+            }
+            ul {
+                padding: 0 30px;
+                li {
+                    padding: 10px;
+                    font-size: 24px;
+                        i {
+                            font-size: 24px;
+                            line-height: 24px;
+                            width: 24px;
+                        }
+                }
+            }
     }
     #habilidades-container {
         padding: 30px;
         width: 450px;
-    }
-    #habilidades-container h2 {
-        font-size: 36px;
-        margin-bottom: 32px;
+            h2 {
+                font-size: 36px;
+                margin-bottom: 32px;
+            }
     }
     #habilidades-ul {
         display: flex;
         padding: 0 30px;
-    }
-    #habilidades-ul ul li {
-        padding: 10px;
-        font-size: 24px;
-    }
-    #habilidades-ul ul li i {
-        font-size: 24px;
-        line-height: 24px;
-        width: 24px;
+            ul li {
+                padding: 10px;
+                font-size: 24px;
+                    i {
+                        font-size: 24px;
+                        line-height: 24px;
+                        width: 24px;
+                    }
+            }
     }
 
     /* About-Education Section */
@@ -926,14 +923,38 @@ main a{
     #education-section {
         padding: 40px 0;
         margin: auto;
-    }
-    #education-section h2 {
-        font-size: 38px;
-        font-weight: bold;
-        margin: 40px 0;
+            h2 {
+                font-size: 38px;
+                font-weight: bold;
+                margin: 40px 0;
+            }
     }
     #educacion {
         width: 100%;
+            .left-education h4{
+                font-size: 18px;
+                font-weight: normal;
+                    span {
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+            } 
+            .right-education {
+                text-align: right;
+                    h4 {
+                        font-size: 18px;
+                    }
+                    a {
+                        color: #fff;
+                        font-weight: bold;
+                        font-style: italic;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                    }
+            }
     }
     #psp-illustrator {
         display: flex;
@@ -958,30 +979,6 @@ main a{
         justify-content: space-between;
         padding: 30px 40px;
         border-top: 1px solid $cards-color;
-    }
-    #educacion .left-education h4{
-        font-size: 18px;
-        font-weight: normal;
-    }
-    #educacion .left-education h4 span {
-        font-weight: bold;
-        font-size: 20px;
-    }
-    #educacion .right-education {
-        text-align: right;
-    }
-    #educacion .right-education h4 {
-        font-size: 18px;
-    }
-    #educacion .right-education a {
-        color: #fff;
-        font-weight: bold;
-        font-style: italic;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    #educacion .right-education a:hover {
-        color: $primary-color;
     }
 }
 
@@ -1035,19 +1032,19 @@ main a{
         display: flex !important;
         flex-wrap: wrap;
         justify-content: center;
+            a img {
+                align-items: center;
+                justify-content: center;
+                width: 500px;
+            }
     } 
-    #a-link-projects a img {
-        align-items: center;
-        justify-content: center;
-    }
-    #a-link-projects img {
-        width: 500px;
-    }
-    .footer .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
+    .footer {
+            .footer-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                text-align: center;
+            }
     }
 }
 
@@ -1072,12 +1069,12 @@ main a{
     #descripciones {
         padding: 1rem;
         font-size: 1rem;
-    }
-    #descripciones span {
-        font-size: 2rem;
-    }
-    #descripciones p {
-        font-size: 1rem;
+            span {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
     }
     .logos {
         line-height: 36px;
@@ -1091,12 +1088,14 @@ main a{
     .about-btn button {
         width: max-content;
     }
-    .footer .footer-container {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 1rem;
-        align-items: center;
-        text-align: center;
+    .footer {
+            .footer-container {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 1rem;
+                align-items: center;
+                text-align: center;
+            }
     }
     .cv-btn button {
         width: 100%;
@@ -1127,51 +1126,51 @@ main a{
         width: 100%;
         margin: auto;
         flex-wrap: wrap;
-    }
-    #projects-info-container h2 {
-    font-family: "Fragment";
-    color: #fff;
-    font-size: 32px;
-    font-weight: bold;
-    margin: none;
-    }
-    #projects-info-container h2 span {
-    color: $primary-color;
-    font-family: "Fragment";
-    font-style: italic;
-    align-items: center;
+            h2 {
+                font-family: "Fragment";
+                color: #fff;
+                font-size: 32px;
+                font-weight: bold;
+                margin: none;
+                    span {
+                        color: $primary-color;
+                        font-family: "Fragment";
+                        font-style: italic;
+                        align-items: center;
+                    }
+            }
     }
     #projects-container {
         margin: auto;
         padding: 0;
         display: flex !important;
-    }
-    #projects-container img {
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    }
-    #projects-container a div {
-    display: block;
-    text-align: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    color: $bg-color;
-    transition: all 0.3s ease
+            img {
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+            a div {
+                display: block;
+                text-align: center;
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 8px;
+                font-weight: bold;
+                text-decoration: none;
+                color: $bg-color;
+                transition: all 0.3s ease
+            }
     }
     #a-link-projects {
         display: flex;
         justify-content: center;
-    }
-    #a-link-projects img {
-        width: 260px;
-        justify-content: center;
-        padding: 20px 0;
-    }
-    #a-link-projects :hover{
-    filter: brightness(0.7);
+            img {
+                width: 260px;
+                justify-content: center;
+                padding: 20px 0;
+                    &:hover{
+                        filter: brightness(0.7);
+                    }
+            }
     }
 
     /* About Page */
@@ -1186,25 +1185,21 @@ main a{
         padding: 20px;
         font-size: 1rem;
         font-weight: 200;
-    }
-    #descripciones-about span {
-        color: $primary-color;
-        font-size: 2rem;
-        font-weight: 1200;
-        font-family: "Fragment"; 
+            span {
+                color: $primary-color;
+                font-size: 2rem;
+                font-weight: 1200;
+                font-family: "Fragment"; 
+            }
     }
     .education-btn button {
         width: max-content;
         padding: 10px 20px;
         font-size: 14px;
-    }
-    .contact-btn button {
-        width: max-content;
-    }
-    .education-btn button {
         width: 100%;
     }
     .contact-btn button {
+        width: max-content;
         width: 100%;
     }
     #more-info {
@@ -1222,31 +1217,31 @@ main a{
         border-radius: 16px;
         box-shadow: 0 0 20px rgb(22, 25, 27);
         width: fit-content;
+            h2 {
+                font-size: 32px;
+                font-family: "Fragment";
+                font-weight: bold;
+                margin-bottom: 40px;
+                text-align: center;
+                    span {
+                        color: $primary-color;
+                        font-family: "Fragment";
+                        font-style: italic;
+                    }
+            }
     }
-    #aptitudes h2 {
-    font-size: 32px;
-    font-family: "Fragment";
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-align: center;
-    }
-    #aptitudes h2 span {
-        color: $primary-color;
-        font-family: "Fragment";
-        font-style: italic;
-        }
     .aptitudes-ul {
         padding: 0 10px;
-    }
-    .aptitudes-ul ul li {
-        padding: 10px 0px;
-        font-size: 20px;
-    }
-    .aptitudes-ul ul li i {
-        margin-right: 20px;
-        font-size: 24px;
-        width: 29px;
-        text-align: center;
+            ul li {
+                padding: 10px 0px;
+                font-size: 20px;
+                    i {
+                        margin-right: 20px;
+                        font-size: 24px;
+                        width: 29px;
+                        text-align: center;
+                    }
+            }
     }
 
 /* Sección Derecha */
@@ -1258,31 +1253,31 @@ main a{
         border-radius: 16px;
         box-shadow: 0 0 20px rgb(22, 25, 27);
         width: fit-content;
-    }
-    #habilidades-container h2{
-        font-size: 32px;
-        font-family: "Fragment";
-        font-weight: bold;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-    #habilidades-container h2 span {
-        color: $primary-color;
-        font-family: "Fragment";
-        font-style: italic;
+            h2{
+                font-size: 32px;
+                font-family: "Fragment";
+                font-weight: bold;
+                margin-bottom: 40px;
+                text-align: center;
+                    span {
+                        color: $primary-color;
+                        font-family: "Fragment";
+                        font-style: italic;
+                    }
+            }
     }
     .habilidades-ul {
         padding: 0 10px;
-    }
-    .habilidades-ul ul li {
-        padding: 10px 0px;
-        font-size: 20px;
-    }
-    .habilidades-ul ul li i {
-        margin-right: 20px;
-        font-size: 24px;
-        width: 29px;
-        text-align: center;
+            ul li {
+                padding: 10px 0px;
+                font-size: 20px;
+                    i {
+                        margin-right: 20px;
+                        font-size: 24px;
+                        width: 29px;
+                        text-align: center;
+                    }
+            }
     }
 
 /* About-Educación */
@@ -1298,6 +1293,33 @@ main a{
     }
     #educacion {
         width: 100%;
+            .left-education h4{
+                font-weight: normal;
+                font-size: 14px;
+                    span {
+                        font-weight: bold;
+                        font-size: 18px;
+                    }
+            }
+            .right-education {
+                text-align: right;
+                font-size: 14px;
+                    h4 {
+                        text-align: right;
+                        font-size: 14px;
+                        
+                    }
+                    a {
+                        color: #fff;
+                        font-weight: bold;
+                        font-style: italic;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+                            &:hover {
+                                color: $primary-color;
+                            }
+                    }
+            }
     }
     #psp-illustrator {
         display: flex;
@@ -1322,31 +1344,5 @@ main a{
         justify-content: space-between;
         padding: 30px 20px;
         border-top: 1px solid $cards-color;
-    }
-    #educacion .left-education h4{
-        font-weight: normal;
-        font-size: 14px;
-    }
-    #educacion .left-education h4 span {
-        font-weight: bold;
-        font-size: 18px;
-    }
-    #educacion .right-education {
-        text-align: right;
-        font-size: 14px;
-    }
-    #educacion .right-education h4 {
-        text-align: right;
-        font-size: 14px;
-    }
-    #educacion .right-education a {
-        color: #fff;
-        font-weight: bold;
-        font-style: italic;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    #educacion .right-education a:hover {
-        color: $primary-color;
     }
 }
