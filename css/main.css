@@ -276,12 +276,12 @@ main a {
   text-align: center;
   padding: 40px 0;
 }
-.last-project-container h2 {
+.last-project-container h1 {
   font-size: 42px;
   font-weight: bold;
   padding: 40px;
 }
-.last-project-container h2 span {
+.last-project-container h1 span {
   color: #1cbfdf;
   font-family: "Fragment";
 }
@@ -362,7 +362,7 @@ main a {
   padding: 25px;
 }
 
-.contacto-container h2 {
+#contacto-container h1 {
   font-family: Fragment;
   font-size: 48px;
   font-weight: bold;
@@ -373,27 +373,27 @@ main a {
 }
 
 /* Botones */
-.buttons-container {
-  max-width: 1200px;
+#buttons-container {
   margin: 10px auto;
 }
-.buttons-container .checkbox {
+#buttons-container #checkbox {
   width: 100%;
 }
-.buttons-container .checkbox ul {
+#buttons-container #checkbox ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 300px;
 }
-.buttons-container .checkbox ul li {
+#buttons-container #checkbox ul li {
   display: inline-block;
   margin: 0 20px;
 }
-.buttons-container .checkbox ul li label {
+#buttons-container #checkbox ul li label {
   display: inline-block;
   background-color: #212427;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #9d9d9d;
   color: #bbbbbb;
   border-radius: 16px;
   transition: all 0.3s ease;
@@ -401,14 +401,14 @@ main a {
   font-size: 30px;
   font-weight: bold;
 }
-.buttons-container .checkbox ul li label:hover {
+#buttons-container #checkbox ul li label:hover {
   font-weight: bold;
   border-color: #0093b1;
 }
-.buttons-container .checkbox ul li input[type=checkbox] {
+#buttons-container #checkbox ul li input[type=checkbox] {
   opacity: 0;
 }
-.buttons-container .checkbox ul li input[type=checkbox]:checked + label {
+#buttons-container #checkbox ul li input[type=checkbox]:checked + label {
   border-color: #ffffff;
   background-color: #00667a;
 }
@@ -743,13 +743,13 @@ main a {
   border-radius: 16px;
   margin: 50px;
 }
-.habilidades h2 {
+.habilidades h1 {
   text-align: center;
   padding-bottom: 20px;
   font-size: 48px;
   color: #1cbfdf;
 }
-.habilidades h4 {
+.habilidades p {
   margin-bottom: 25px;
   color: #bbb;
   text-align: center;

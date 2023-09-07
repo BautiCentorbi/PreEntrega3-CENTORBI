@@ -10,19 +10,7 @@
     font-family: "Fragment";
     src: url(../fonts/Fragment/PPFragment-SerifRegular.otf);
 }
-
-// Variables
-
-    /* Colors */
-
-$primary-color: #1cbfdf; 
-$bg-color: #212427;
-$buttons-color: #00667a;
-$buttons-hovered: #0093b1;
-$cards-color: #535456;
-$ligth-grey: #333538;
-$secondary-button-border: #9d9d9d;
-
+@import "./variables";
 
 // SCSS
 
@@ -278,7 +266,7 @@ main a{
 .last-project-container {
     text-align: center;
     padding: 40px 0;
-        h2 {
+        h1 {
             font-size: 42px;
             font-weight: bold; 
             padding: 40px;
@@ -365,8 +353,8 @@ main a{
 .main-contact {
     padding: 25px;
 }
-.contacto-container {
-    h2 {
+#contacto-container {
+    h1 {
         font-family: Fragment;
         font-size: 48px;
         font-weight: bold;
@@ -379,43 +367,43 @@ main a{
 
 /* Botones */
 
-.buttons-container   {
-    max-width: 1200px;
+#buttons-container   {
     margin: 10px auto;
-        .checkbox {
+        #checkbox {
             width: 100%;
-            ul  {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 300px;
-                    li {
-                        display: inline-block;
-                        margin: 0 20px;
-                            label {
-                                display: inline-block;
-                                background-color: $bg-color;  
-                                border: 1px solid #bbbbbb;
-                                color: #bbbbbb;
-                                border-radius: 16px;
-                                transition: all 0.3s ease;
-                                padding:  20px 40px;
-                                font-size: 30px;
-                                font-weight: bold;
-                                    &:hover {
-                                        font-weight: bold;
-                                        border-color: $buttons-hovered;
-                                    }
-                            }
-                            input[type="checkbox"] {
-                                opacity: 0;
-                                    &:checked + label {
-                                        border-color: #ffffff;
-                                        background-color: $buttons-color;
-                                    }
-                            }
-                    }
-            }
+        ul  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 300px;
+                li {
+                    display: inline-block;
+                    margin: 0 20px;
+                        label {
+                            display: inline-block;
+                            background-color: $bg-color;  
+                            border: 1px solid $secondary-button-border;
+                            color: #bbbbbb;
+                            border-radius: 16px;
+                            transition: all 0.3s ease;
+                            padding:  20px 40px;
+                            font-size: 30px;
+                            font-weight: bold;
+                                &:hover {
+                                    font-weight: bold;
+                                    border-color: $buttons-hovered;
+                                }
+                        }
+                        input[type="checkbox"] {
+                            opacity: 0;
+                                &:checked + label {
+                                    border-color: #ffffff;
+                                    background-color: $buttons-color;
+                                }
+                        }
+                }
+        }
         }
 }
 
@@ -734,13 +722,13 @@ main a{
     display: inline-block;
     border-radius: 16px;
     margin: 50px;
-        h2{
+        h1{
             text-align: center;
             padding-bottom: 20px;
             font-size: 48px;
             color: $primary-color;
         }
-        h4 {
+        p{
             margin-bottom: 25px;
             color: #bbb;
             text-align: center;
@@ -774,17 +762,17 @@ main a{
 /* md-Desktop */
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-    @import "desktop-md";
+    @import "./media-querys/desktop-md";
 }
 
 /* Tablet View */
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    @import "tablet";
+    @import "./media-querys/tablet";
 }
 
 /* Mobile View */
 
 @media (min-width: 300px) and (max-width: 480px) { 
-    @import "mobile";
+    @import "./media-querys/mobile";
 }
