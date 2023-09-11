@@ -33,9 +33,6 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
   padding: 1rem 3rem;
 }
 #nav-container a {
@@ -85,30 +82,6 @@ main {
 #drawer-button {
   color: #fff;
   background-color: #fff;
-}
-
-.contact-btn button {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1rem;
-  background-color: #fff;
-  display: inline;
-  justify-content: right;
-  padding: 10px 24px;
-  border-radius: 16px;
-  font-weight: bold;
-  color: #000000;
-  border-style: solid;
-  border-color: #fff;
-  transition: all 300ms ease;
-  cursor: pointer;
-}
-.contact-btn button:hover {
-  background-color: #212427;
-  color: #ffffff;
-  border-style: solid;
-  border-color: #ffffff;
-  font-weight: 900;
 }
 
 /* Inicio */
@@ -268,27 +241,26 @@ main a {
 }
 
 /* Portfolio Page */
-.last-project {
+#last-project {
   display: block;
 }
+#last-project #figma-prototype {
+  width: 360px;
+  height: 800px;
+}
 
-.last-project-container {
+#last-project-container {
   text-align: center;
   padding: 40px 0;
 }
-.last-project-container h1 {
+#last-project-container h1 {
   font-size: 42px;
   font-weight: bold;
   padding: 40px;
 }
-.last-project-container h1 span {
+#last-project-container h1 span {
   color: #1cbfdf;
   font-family: "Fragment";
-}
-
-.project-iframe {
-  display: flex;
-  justify-content: center;
 }
 
 /* Footer */
@@ -321,7 +293,11 @@ main a {
   align-items: center;
   padding: 10px;
 }
+#footer #footer-container #footer-columns .contacto {
+  width: 360px;
+}
 #footer #footer-container #footer-columns .indice {
+  width: 90px;
   margin: 0;
   padding: 0;
 }
@@ -358,7 +334,7 @@ main a {
 }
 
 /* Contacto.html */
-.main-contact {
+#main-contact {
   padding: 25px;
 }
 
@@ -378,11 +354,14 @@ main a {
 }
 #buttons-container #checkbox {
   width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 #buttons-container #checkbox ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
   flex-wrap: wrap;
   height: 300px;
 }
@@ -414,27 +393,26 @@ main a {
 }
 
 /* Formulario */
-.forms {
+#forms {
   max-width: 1200px;
   margin: 10px auto;
   background-color: #333538;
   border-radius: 16px;
   padding: 40px;
 }
-.forms h2 {
+#forms h2 {
   font-size: 32px;
   font-weight: bolder;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.form-container {
+#form-container {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
 }
-.form-container input {
+#form-container input {
   width: max-content;
   padding: 20px 40px;
   margin: 0 auto;
@@ -446,12 +424,12 @@ main a {
   font-size: 20px;
 }
 
-.submit-btn {
+#submit-btn {
+  margin: 40px 0;
   display: flex;
-  justify-content: end;
-  margin: 40px 25px 20px;
+  justify-content: right;
 }
-.submit-btn button {
+#submit-btn button {
   padding: 10px 80px;
   font-size: 20px;
   font-weight: bold;
@@ -467,7 +445,7 @@ main a {
   transition: all 300ms ease;
   cursor: pointer;
 }
-.submit-btn button:hover {
+#submit-btn button:hover {
   background-color: #00667a;
   color: #fff;
 }
@@ -770,17 +748,17 @@ main a {
   transition: all 0.3s ease;
   box-shadow: 0px 0px 20px #212427;
 }
+.habilidades ul li:hover {
+  background-color: #535456;
+}
 .habilidades ul li i {
   font-size: 46px;
   display: block;
   padding: 20px 25px;
 }
-.habilidades ul li :hover {
-  background-color: #535456;
-}
 
 /* md-Desktop */
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1599px) {
   /* Home Page */
   #Hero-container {
     display: flex;
@@ -870,12 +848,12 @@ main a {
   }
   /* About-Skills */
   #more-info {
-    margin: 0;
+    margin: auto;
     padding-bottom: 40px;
   }
   #info-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 20px;
   }
   #aptitudes {
@@ -932,11 +910,11 @@ main a {
   #educacion {
     width: 100%;
   }
-  #educacion .left-education h4 {
+  #educacion .left-education h3 {
     font-size: 18px;
     font-weight: normal;
   }
-  #educacion .left-education h4 span {
+  #educacion .left-education h3 span {
     font-weight: bold;
     font-size: 20px;
   }
@@ -979,6 +957,41 @@ main a {
     justify-content: space-between;
     padding: 30px 40px;
     border-top: 1px solid #535456;
+  }
+  #contacto-container h1 {
+    font-size: 36px;
+  }
+  #buttons-container #checkbox ul {
+    height: 250px;
+  }
+  #buttons-container #checkbox ul li label {
+    font-size: 24px;
+    padding: 16px 24px;
+  }
+  #forms {
+    padding: 30px;
+  }
+  #forms h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  #form-container input {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  #form-container input::placeholder {
+    font-size: 16px;
+  }
+  #submit-btn {
+    padding: 40px 10px;
+  }
+  #submit-btn button {
+    font-size: 18px;
+    padding: 10px 60px;
+  }
+  #last-project #figma-prototype {
+    width: 360px;
+    height: 800px;
   }
 }
 /* Tablet View */
@@ -1040,6 +1053,196 @@ main a {
     align-items: center;
     text-align: center;
   }
+  #contacto-container h1 {
+    font-size: 32px;
+  }
+  #buttons-container #checkbox ul {
+    height: 250px;
+  }
+  #buttons-container #checkbox ul li label {
+    font-size: 20px;
+    padding: 16px 24px;
+  }
+  #forms {
+    padding: 20px;
+  }
+  #forms h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  #form-container input {
+    width: 100%;
+    margin: 16px 0;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  #form-container input::placeholder {
+    font-size: 16px;
+  }
+  #submit-btn {
+    padding: 40px 10px;
+  }
+  #submit-btn button {
+    font-size: 18px;
+    padding: 10px 60px;
+  }
+  #last-project #figma-prototype {
+    width: 360px;
+    height: 800px;
+  }
+  #about {
+    padding: 1rem 1rem;
+  }
+  #descripciones-about {
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  #descripciones-about span {
+    color: #1cbfdf;
+    font-size: 2rem;
+    font-weight: 1200;
+    font-family: "Fragment";
+  }
+  .education-btn button {
+    width: max-content;
+    padding: 10px 20px;
+    font-size: 18px;
+    width: 100%;
+  }
+  .contact-btn button {
+    width: max-content;
+    width: 100%;
+    font-size: 18px;
+  }
+  #more-info {
+    margin: auto;
+    padding-bottom: 40px;
+  }
+  /* Sección Izquierda */
+  #aptitudes {
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #333538;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgb(22, 25, 27);
+    width: 500px;
+  }
+  #aptitudes h2 {
+    font-size: 32px;
+    font-family: "Fragment";
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #aptitudes h2 span {
+    color: #1cbfdf;
+    font-family: "Fragment";
+    font-style: italic;
+  }
+  .aptitudes-ul {
+    padding: 0 10px;
+  }
+  .aptitudes-ul ul li {
+    padding: 10px 0px;
+    font-size: 20px;
+  }
+  .aptitudes-ul ul li i {
+    margin-right: 20px;
+    font-size: 24px;
+    width: 29px;
+    text-align: center;
+  }
+  /* Sección Derecha */
+  #habilidades-container {
+    justify-content: center !important;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333538;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgb(22, 25, 27);
+    width: 500px;
+  }
+  #habilidades-container h2 {
+    font-size: 32px;
+    font-family: "Fragment";
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  #habilidades-container h2 span {
+    color: #1cbfdf;
+    font-family: "Fragment";
+    font-style: italic;
+  }
+  .habilidades-ul {
+    padding: 0 10px;
+  }
+  .habilidades-ul ul li {
+    padding: 10px 0px;
+    font-size: 20px;
+  }
+  .habilidades-ul ul li i {
+    margin-right: 20px;
+    font-size: 24px;
+    width: 29px;
+    text-align: center;
+  }
+  /* About-Educación */
+  #education-section {
+    padding: 20px 0;
+    margin: auto;
+  }
+  #education-h2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  #educacion {
+    width: 100%;
+  }
+  #educacion .left-education h3 {
+    font-weight: normal;
+    font-size: 18px;
+  }
+  #educacion .left-education h3 span {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  #educacion .right-education {
+    text-align: right;
+    font-size: 18px;
+  }
+  #educacion .right-education h3 {
+    text-align: right;
+    font-size: 20px;
+  }
+  #educacion .right-education a {
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  #educacion .right-education a:hover {
+    color: #1cbfdf;
+  }
+  #psp-illustrator {
+    padding: 30px 20px;
+    border-top: 1px solid #535456;
+  }
+  #uxui {
+    padding: 30px 20px;
+    border-top: 1px solid #535456;
+  }
+  #uxui-avanzado {
+    padding: 30px 20px;
+    border-top: 1px solid #535456;
+  }
+  #webd {
+    padding: 30px 20px;
+    border-top: 1px solid #535456;
+  }
 }
 /* Mobile View */
 @media (min-width: 300px) and (max-width: 480px) {
@@ -1048,7 +1251,6 @@ main a {
     margin: 0;
     box-sizing: border-box;
   }
-  /* Home,Footer, Nav */
   #intro {
     padding: 1rem 1rem;
     flex-wrap: wrap;
@@ -1078,30 +1280,11 @@ main a {
   .about-btn button {
     width: max-content;
   }
-  .footer .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1rem;
-    align-items: center;
-    text-align: center;
-  }
   .cv-btn button {
     width: 100%;
   }
   .about-btn button {
     width: 100%;
-  }
-  #main-nav a:hover {
-    transition: all 300ms ease;
-    text-decoration: none;
-    color: #000000;
-    font-weight: 800;
-    border-radius: 16px;
-    padding: auto;
-    background-color: #ffffff;
-  }
-  #nav-container a span {
-    display: n;
   }
   #projects {
     margin: 0px;
@@ -1159,6 +1342,32 @@ main a {
   }
   #a-link-projects img:hover {
     filter: brightness(0.7);
+  }
+  #main-nav a:hover {
+    transition: all 300ms ease;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+    border-radius: 16px;
+    padding: auto;
+    background-color: #ffffff;
+  }
+  #nav-container a span {
+    display: n;
+  }
+  #footer #footer-columns {
+    width: 100%;
+  }
+  #footer #footer-container {
+    margin: 0;
+  }
+  #footer #footer-container #footer-columns {
+    justify-content: center;
+    height: auto;
+    padding: 32px;
+  }
+  #footer #footer-container #footer-columns .contacto {
+    padding: auto;
   }
   /* About Page */
   #about {
@@ -1274,11 +1483,11 @@ main a {
   #educacion {
     width: 100%;
   }
-  #educacion .left-education h4 {
+  #educacion .left-education h3 {
     font-weight: normal;
     font-size: 14px;
   }
-  #educacion .left-education h4 span {
+  #educacion .left-education h3 span {
     font-weight: bold;
     font-size: 18px;
   }
@@ -1323,6 +1532,56 @@ main a {
     justify-content: space-between;
     padding: 30px 20px;
     border-top: 1px solid #535456;
+  }
+  #contacto-container h1 {
+    font-size: 24px;
+  }
+  #buttons-container #checkbox {
+    width: 100%;
+  }
+  #buttons-container #checkbox ul {
+    height: auto;
+    width: 100%;
+  }
+  #buttons-container #checkbox ul li {
+    width: 100%;
+  }
+  #buttons-container #checkbox ul li label {
+    margin: 8px 0;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding: 16px 0;
+  }
+  #forms {
+    padding: 20px;
+  }
+  #forms h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  #form-container input {
+    width: 100%;
+    margin: 16px 0;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  #form-container input::placeholder {
+    font-size: 14px;
+  }
+  #submit-btn {
+    padding: 16px 10px;
+  }
+  #submit-btn button {
+    font-size: 18px;
+    padding: 10px 60px;
+    font-size: 14px;
+    width: 100%;
+  }
+  #last-project #figma-prototype {
+    width: 222px;
+    height: 494px;
   }
 }
 

@@ -91,12 +91,12 @@
 /* About-Skills */
 
 #more-info {
-    margin: 0;
+    margin: auto;
     padding-bottom: 40px;
 }
 #info-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 20px;
 }
 #aptitudes {
@@ -154,7 +154,7 @@
 }
 #educacion {
     width: 100%;
-        .left-education h4{
+        .left-education h3{
             font-size: 18px;
             font-weight: normal;
                 span {
@@ -202,4 +202,61 @@
     justify-content: space-between;
     padding: 30px 40px;
     border-top: 1px solid $cards-color;
+}
+
+// Contacto
+
+#contacto-container {
+    h1 {
+        font-size: 36px;
+    }
+}
+#buttons-container {
+    #checkbox {
+        ul{
+            height: 250px;
+                li {
+                    label {
+                        font-size: 24px;
+                        padding: 16px 24px;
+                    }
+                }
+            }
+    }
+    
+}
+
+// Contacto/Formulario
+
+#forms {
+    padding: 30px;
+        h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+}
+#form-container {
+        input {
+            padding: 10px 20px;
+            font-size: 18px;
+            &::placeholder{
+                    font-size: 16px;
+            }
+        }
+}
+#submit-btn {
+    padding: 40px 10px;
+        button {
+            font-size: 18px;
+            padding: 10px 60px;
+        }
+}
+
+// Portfolio
+
+#last-project {
+    #figma-prototype {
+        width: 360px;
+        height: 800px;
+    }
 }
