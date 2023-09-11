@@ -1,7 +1,14 @@
 
 // Variables
 
-    /* Colors */
+    // Tipografía
+
+    @font-face {
+        font-family: "Fragment";
+        src: url(../fonts/Fragment/PPFragment-SerifRegular.otf);
+    }
+
+    // Colores
 
     $primary-color: #1cbfdf; 
     $bg-color: #212427;

@@ -365,7 +365,7 @@
         }
 }
 
-// Portfolio
+// Portfolio Page
 
 #last-project {
     #figma-prototype {
@@ -374,3 +374,27 @@
     }
 }
 
+// Habilidades Page
+
+.about-main {
+    padding: 32px;
+}
+#habilidades {
+    margin: auto;
+    h1 {
+        font-size: 36px;
+    }
+    ul{
+        gap: 1rem;
+        grid-auto-rows: 125px;
+        grid-template-columns: repeat(auto-fill, minmax(113px, 1fr));
+        li {
+            width: 113px;
+            font-size: 16px;
+            i {
+                font-size: 24px;
+                padding: 10px 16px;
+            }
+        }
+    }
+}

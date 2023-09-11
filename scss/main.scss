@@ -6,10 +6,7 @@
     list-style: none !important;
     text-decoration: none !important;
 }
-@font-face {
-    font-family: "Fragment";
-    src: url(../fonts/Fragment/PPFragment-SerifRegular.otf);
-}
+
 @import "./variables";
 
 // SCSS
@@ -323,7 +320,7 @@ main a{
         }
 }
 
-/* Contacto.html */
+/* Contacto Page */
 
 #main-contact {
     padding: 25px;
@@ -682,7 +679,7 @@ main a{
     justify-content: center;
     padding: 100px;
 }
-.skill-container {
+#skill-container {
     background-color: $ligth-grey;
     display: flex;
     border-radius: 16px;
@@ -693,7 +690,7 @@ main a{
     margin-bottom: 25px;
     width: 100%;
 }
-.habilidades {
+#habilidades {
     max-width: 1200px;
     padding: 25px;
     display: inline-block;
@@ -713,11 +710,15 @@ main a{
         ul {
             padding: 25px 0;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            grid-auto-rows: 175px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 10px;
             text-align: center;
                 li {
                     display: inline;
+                    align-items: center !important;
+                    width: 220px;
                     padding: 25px;
                     font-size: 26px;
                     border-radius: 16px;
